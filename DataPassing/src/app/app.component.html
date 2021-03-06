@@ -1,0 +1,10 @@
+<div class="pt-4">
+    <h3 class="header text-center">FROM <b class="text-danger">PARENT</b> COMPONENT</h3>
+    <app-users [data]= "data"></app-users>
+    <app-child-component (parentFunction)="parentFunction($event)"></app-child-component>
+</div>
+<hr class="bg-info">
+<div class="container pt-2">
+       <h3 class="header text-center">FROM <b class="text-success">CHILD</b> COMPONENT</h3>
+        <app-users [data]= "users" ></app-users>
+</div>
